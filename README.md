@@ -1,5 +1,9 @@
 aws-arn-parser
 ==============
+Parser for Amazon Resource Name strings
+
+[![Build Status](https://secure.travis-ci.org/sandfox/aws-arn-parser.png?branch=master)](http://travis-ci.org/[sandfox]/[aws-arn-parser])
+
 
 Does what it says on the tin! Parsers an Amazon Resource Name and
 gives it back as object. 
@@ -45,5 +49,3 @@ license
 =======
 
 MIT
-
-[![Build Status](https://secure.travis-ci.org/sandfox/aws-arn-parser.png?branch=master)](http://travis-ci.org/[sandfox]/[aws-arn-parser])
