@@ -1,7 +1,7 @@
 {
     "name" : "aws-arn-parser",
     "description" : "Parser for Amazon Resource Name strings",
-    "version" : "0.3.10",
+    "version" : "0.0.1",
     "repository" : {
         "type" : "git",
         "url" : "git://github.com/sandfox/aws-arn-parser.git"
