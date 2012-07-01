@@ -11,7 +11,7 @@
         "amazon",
         "aws",
         "parser",
-        "arn",
+        "arn"
     ],
     "directories" : {
         "lib" : "lib",
