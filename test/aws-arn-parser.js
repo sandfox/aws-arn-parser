@@ -11,7 +11,6 @@ test('load parser', function (t){
 test('Parse valid string', function (t){
 
 	arnObj = awsParser(validArnString);
-	console.log(arnObj);
 	t.equal(arnObj.service, 'iam');
 	t.equal(arnObj.region, '');
 	t.equal(arnObj.namespace, '123456789012');
