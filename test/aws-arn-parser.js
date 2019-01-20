@@ -1,21 +1,16 @@
-var test = require('tap').test;
-var awsParser;
-var validArnString = 'arn:aws:iam::123456789012:user/division_abc/subdivision_xyz/Bob';
+const assert = require('assert')
 
-test('load parser', function (t){
-	awsParser = require('../lib/aws-arn-parser');
-	t.type(awsParser, 'function', "parser loaded");
-	t.end();
-});
+const parseTestData = require('./data/parse.json')
+const toStringTestData = require('./data/to-string.json')
+// const toStringTestData = []
+const { parse, toString} = require('../src/arn') 
 
-test('Parse valid string', function (t){
+for (const key in parseTestData) {
+	const arnObj = parse(key)
+	assert.deepEqual(arnObj, parseTestData[key], `${key} failed to parse correctly`)
+}
 
-	arnObj = awsParser(validArnString);
-	t.equal(arnObj.service, 'iam');
-	t.equal(arnObj.region, '');
-	t.equal(arnObj.namespace, '123456789012');
-	t.equal(arnObj.relativeId, 'user/division_abc/subdivision_xyz/Bob');
-
-	t.end();
-
-});
+for (const key in toStringTestData) {
+	const arnString = toString(toStringTestData[key])
+	assert.equal(arnString, key)
+}

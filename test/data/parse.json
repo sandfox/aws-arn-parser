@@ -1,0 +1,33 @@
+{
+	"arn:aws:rds:eu-west-1:123456789012:db:mysql-db" : {
+		"partition": "aws",
+		"service": "rds",
+		"region": "eu-west-1",
+		"accountID": "123456789012",
+		"resource": "db:mysql-db"
+	},
+
+	"arn:aws:elasticbeanstalk:us-east-1:123456789012:environment/My App/MyEnvironment" : {
+		"partition": "aws",
+		"service": "elasticbeanstalk",
+		"region": "us-east-1",
+		"accountID": "123456789012",
+		"resource": "environment/My App/MyEnvironment"
+	},
+
+	"arn:aws:iam::123456789012:user/David" : {
+		"partition": "aws",
+		"service": "iam",
+		"region": "",
+		"accountID": "123456789012",
+		"resource": "user/David"
+	},
+
+	"arn:aws:s3:::my_corporate_bucket/exampleobject.png" : {
+		"partition": "aws",
+		"service": "s3",
+		"region": "",
+		"accountID": "",
+		"resource": "my_corporate_bucket/exampleobject.png"
+	}
+}
