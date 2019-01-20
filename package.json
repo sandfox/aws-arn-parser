@@ -1,12 +1,12 @@
 {
-  "name": "aws-arn-parser",
+  "name": "@sandfox/arn",
   "description": "Parser for Amazon Resource Name strings",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/sandfox/aws-arn-parser.git"
   },
-  "main": "lib/aws-arn-parser.js",
+  "main": "src/arn.js",
   "keywords": [
     "amazon",
     "aws",
@@ -18,19 +18,13 @@
     "test": "test"
   },
   "scripts": {
-    "test": "tap test/*.js"
+    "test": "node test/*.js"
   },
-  "devDependencies": {
-    "tap": "^5.7.0"
-  },
+  "devDependencies": {},
   "bugs": "https://github.com/sandfox/aws-arn-parser/issues",
-  "engines": {
-    "node": ">=0.8.0"
-  },
   "license": "MIT",
   "author": {
     "name": "James Butler",
-    "email": "james.butler@sandfox.co.uk",
-    "url": "https://github.com/sandfox/"
+    "email": "github@sandfox.co.uk"
   }
 }
