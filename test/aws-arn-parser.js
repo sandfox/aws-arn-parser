@@ -3,7 +3,7 @@ const assert = require('assert')
 const parseTestData = require('./data/parse.json')
 const toStringTestData = require('./data/to-string.json')
 // const toStringTestData = []
-const { parse, toString} = require('../src/arn') 
+const { parse, toString } = require('../src/arn') 
 
 for (const key in parseTestData) {
 	const arnObj = parse(key)
