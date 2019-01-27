@@ -7,6 +7,7 @@
     "url": "git://github.com/sandfox/aws-arn-parser.git"
   },
   "main": "lib/aws-arn-parser.js",
+  "types": "lib/aws-arn-parser.d.ts",
   "keywords": [
     "amazon",
     "aws",
