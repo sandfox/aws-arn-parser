@@ -25,7 +25,6 @@
   "devDependencies": {
     "dtslint": "^0.4.2"
   },
-  "devDependencies": {},
   "bugs": "https://github.com/sandfox/aws-arn-parser/issues",
   "license": "MIT",
   "author": {
