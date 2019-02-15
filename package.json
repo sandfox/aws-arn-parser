@@ -7,6 +7,7 @@
     "url": "git://github.com/sandfox/aws-arn-parser.git"
   },
   "main": "src/arn.js",
+  "types": "types",
   "keywords": [
     "amazon",
     "aws",
@@ -14,13 +15,16 @@
     "arn"
   ],
   "directories": {
-    "lib": "lib",
+    "lib": "src",
     "test": "test"
   },
   "scripts": {
+    "dtslint": "dtslint types",
     "test": "node test/*.js"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "dtslint": "^0.4.2"
+  },
   "bugs": "https://github.com/sandfox/aws-arn-parser/issues",
   "license": "MIT",
   "author": {

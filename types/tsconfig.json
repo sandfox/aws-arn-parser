@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "lib": ["dom", "es2015"],
+        "noEmit": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "paths": { "@sandfox/arn": ["."] },
+        "strict": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true
+    }
+}

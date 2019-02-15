@@ -1,15 +1,19 @@
 # arn
 
-Parser for [Amazon Resource Name](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) strings. 
-
-_Single file and dependency free_
+Parser for [Amazon Resource Name](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) strings.
 
 [![Build Status](https://travis-ci.com/sandfox/aws-arn-parser.svg?branch=master)](https://travis-ci.com/sandfox/aws-arn-parser)
 
+## more info
 
+Does what it says on the tin! Parses an Amazon Resource Name and gives it back as object.
+Loosely based upon the aws golang [implementation](https://github.com/aws/aws-sdk-go/blob/master/aws/arn/arn.go).
 
-Does what it says on the tin! Parsers an Amazon Resource Name and gives it back as object.
-Losely based upon the aws golang [implementation](https://github.com/aws/aws-sdk-go/blob/master/aws/arn/arn.go)
+Benefits:
+
+  - Single implementation file
+  - Dependency-free
+  - Includes TypeScript type definitions
 
 ## install
 
@@ -30,12 +34,12 @@ const arn = parse("arn:aws:iam::123456789012:server-certificate/division_abc/sub
 
 output:
 ```js
-{ 
+{
   partition: 'aws',
   service: 'iam',
   region: '',
   accountID: '123456789012',
-  resource: 'server-certificate/division_abc/subdivision_xyz/ProdServerCert' 
+  resource: 'server-certificate/division_abc/subdivision_xyz/ProdServerCert'
 }
 ```
 
@@ -52,11 +56,11 @@ __toString__ : Returns the canonical representation of an ARN in object form as 
 
 ```js
 const { toString } = require('@sandfox/arn');
-const arn = { 
+const arn = {
   partition: 'aws',
   service: 'iam',
   accountID: '123456789012',
-  resource: 'server-certificate/division_abc/subdivision_xyz/ProdServerCert' 
+  resource: 'server-certificate/division_abc/subdivision_xyz/ProdServerCert'
 }
 
 console.log(toString(arn))
